@@ -79,8 +79,12 @@ export const reqLogout = () => {
   })
 }
 export const reqTradeInfo = () => {
-  return mockAjax({
-    url: '/trade',
+  // return mockAjax({
+  //   url: '/trade',
+  //   method: 'GET'
+  // })
+  return requests({
+    url: '/order/auth/trade',
     method: 'GET'
   })
 }
@@ -112,6 +116,12 @@ export const reqPaying = () => {
 export const reqPayed = () => {
   return mockAjax({
     url: 'payed',
+    method: 'GET'
+  })
+}
+export const reqAddress = () => {
+  return mockAjax({
+    url: 'address',
     method: 'GET'
   })
 }

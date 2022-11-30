@@ -46,3 +46,16 @@ Mock.mock('/mock/payed', {
   data: null,
   ok: true
 })
+Mock.mock('/mock/address', {
+  code: 200,
+  message: '成功',
+  data: [
+    {
+      id: 1,
+      name: '章志强',
+      address: '江西省南昌市豫章师范学院',
+      isDefault: '1',
+      phoneNum: '12345678900'
+    }
+  ]
+})

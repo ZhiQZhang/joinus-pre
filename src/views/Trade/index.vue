@@ -4,9 +4,9 @@
     <div class="content">
       <h5 class="receive">收件人信息</h5>
       <div class="address clearFix" v-for="addr in address" :key="addr.id">
-        <span class="username" :class="addr.isDefault === '1' ? 'selected' : ''">{{addr.consignee}}</span>
+        <span class="username" :class="addr.isDefault === '1' ? 'selected' : ''">{{addr.name}}</span>
         <p @click="changeDefault(addr, address)">
-          <span class="s1">{{addr.userAddress}}</span>
+          <span class="s1">{{addr.address}}</span>
           <span class="s2">{{addr.phoneNum}}</span>
           <span class="s3" v-show="addr.isDefault === '1' ? true : false">默认地址</span>
         </p>
@@ -103,10 +103,10 @@ export default {
   },
   computed: {
     ...mapState({
-      tradeInfo: state => state.trade.tradeInfo
+      tradeInfo: state => state.trade.tradeInfo,
+      address: state => state.trade.address
     }),
     ...mapGetters({
-      address: 'trade/address',
       detailList: 'trade/detailList'
     }),
     DefaultPerson () {
@@ -142,6 +142,7 @@ export default {
   },
   mounted () {
     this.$store.dispatch('trade/getTradeInfo')
+    this.$store.dispatch('trade/getAddress')
   }
 }
 </script>

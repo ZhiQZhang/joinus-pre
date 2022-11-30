@@ -8,8 +8,8 @@ const requests = axios.create({
 })
 // 请求拦截器
 requests.interceptors.request.use((config) => {
-  if (store.state.Detail.uuid_token) {
-    config.headers.userTempId = store.state.Detail.uuid_token
+  if (store.state.user.token) {
+    config.headers.userId = store.state.user.token
   }
   if (sessionStorage.getItem('TOKEN')) {
     config.headers.token = sessionStorage.getItem('TOKEN')
