@@ -3,7 +3,7 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   chainWebpack: (config) => {
-  // 配置Jquery
+    // 配置Jquery
     config.plugin('provide').use(webpack.ProvidePlugin, [
       {
         $: 'jquery',
@@ -16,7 +16,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://39.98.123.211:8510/'
+        target: 'http://39.98.123.211:8510/swagger-ui.html#/'
       }
     }
   }
