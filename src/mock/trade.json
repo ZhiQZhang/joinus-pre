@@ -1,0 +1,46 @@
+{
+	"totalAmount": 37994,
+	"userAddressList": [
+		{
+			"id": 2,
+			"userAddress": "北京市昌平区2",
+			"userId": 2,
+			"consignee": "admin",
+			"phoneNum": "15011111111",
+			"isDefault": "1"
+		},
+		{
+			"id": 1687,
+			"userAddress": "北京市朝阳区北京大学",
+			"userId": 2,
+			"provineId": 8,
+			"consignee": "罗洋超",
+			"phoneNum": "6161512515415",
+			"isDefault": "0"
+		}
+	],
+	"tradeNo": "1b23c1efc8144bfc83e51807f4e71d3a",
+	"totalNum": 2,
+	"detailArrayList": [
+		{
+			"id": null,
+			"orderId": null,
+			"skuId": 8,
+			"skuName": "Apple iPhone 12 (A2404) 64GB 黑色 支持移动联通电信5G 双卡双待手机",
+			"imgUrl": "http://47.93.148.192:8080/group1/M00/00/02/rBHu8l-rgfWAVRWzAABUiOmA0ic932.jpg",
+			"orderPrice": 5999,
+			"skuNum": 4,
+			"hasStock": null
+		},
+		{
+			"id": null,
+			"orderId": null,
+			"skuId": 2,
+			"skuName": "小米10 至尊纪念版 双模5G 骁龙865 120W快充 12GB+256GB 陶瓷黑 游戏手机",
+			"imgUrl": "http://47.93.148.192:8080/group1/M00/00/01/rBHu8l-rfvmAcbl2AAFopp2WGBQ404.jpg",
+			"orderPrice": 6999,
+			"skuNum": 2,
+			"hasStock": null
+		}
+	]
+}

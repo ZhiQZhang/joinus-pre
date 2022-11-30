@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1651,
+		"userAddress": "江西省南昌市豫章师范学院",
+		"userId": 2,
+		"provineId": 6,
+		"consignee": "王涛",
+		"phoneNum": "12564832626",
+		"isDefault": "0"
+	},
+	{
+		"id": 1854,
+		"userAddress": "清华大学",
+		"userId": 2,
+		"provineId": 9,
+		"consignee": "zzq",
+		"phoneNum": "13546946151",
+		"isDefault": "0"
+	},
+	{
+		"id": 1542,
+		"userAddress": "武汉大学",
+		"userId": 2,
+		"provineId": 4,
+		"consignee": "zhy",
+		"phoneNum": "158726894616",
+		"isDefault": "0"
+	},
+	{
+		"id": 1687,
+		"userAddress": "北京市朝阳区北京大学",
+		"userId": 2,
+		"provineId": 8,
+		"consignee": "罗洋超",
+		"phoneNum": "6161512515415",
+		"isDefault": "1"
+	}
+]
